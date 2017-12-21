@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+import TopBar from './TopBar';
 import LeftBar from './LeftBar';
 import MainView from './MainView';
 
@@ -10,7 +11,7 @@ class App extends Component {
     return (
         <Router>
             <div className="app">
-                <div className="header">header </div>
+                <TopBar/>
                 <LeftBar/>
                 <MainView/>
                 <div className="footer">footer </div>
