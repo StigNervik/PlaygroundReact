@@ -28,8 +28,6 @@ class Clock extends Component {
         return i;
     }
 
-
-
     tick() {
         let date = new Date();
         let hours = this.formatTime(date.getHours());
@@ -41,7 +39,8 @@ class Clock extends Component {
     render() {
         return (
             <div className="clock">
-                <div className="clockText">     {this.state.time}
+                <div className="clockText">
+                    {this.state.time}
                 </div>
             </div>
         )

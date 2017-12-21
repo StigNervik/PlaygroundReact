@@ -38,7 +38,6 @@ html, body {
     flex-flow: column;
 }
 
-
 .topBar {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)), linear-gradient(#323232, #323232);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
@@ -82,8 +81,34 @@ html, body {
 .topBarButton {
     width: 150px;
     height: 100%;
-    background-color: green;
+    background-color: black;
+    display: grid;
 }
+
+.topBarButtonSelected {
+    width: 150px;
+    height: 100%;
+    background-color: #e7e8ed;
+    display: grid;
+}
+
+.topBarButtonText {
+    margin: auto;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    background-color: transparent;
+}
+
+.topBarButtonTextSelected {
+    margin: auto;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    background-color: transparent;
+    color: black;
+}
+
 
 /* Navigation bar */
 .leftBarButton {
