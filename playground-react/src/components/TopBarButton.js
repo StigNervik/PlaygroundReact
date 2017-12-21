@@ -14,11 +14,11 @@ class TopBarButton extends Component {
 
     render() {
         return (
-        <div className={(this.props.selected == this.props.type) ?
+        <div className={(this.props.selected === this.props.type) ?
             "topBarButtonSelected" : "topBarButton"}
             onClick={this.handleSelected}
         >
-            <div className={(this.props.selected == this.props.type) ?
+            <div className={(this.props.selected === this.props.type) ?
                 "topBarButtonTextSelected" : "topBarButtonText"}
                 >
                 {this.props.name}

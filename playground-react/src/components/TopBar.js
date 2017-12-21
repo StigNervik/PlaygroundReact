@@ -14,9 +14,19 @@ class TopBar extends Component {
     }
 
     handleSelected(selected) {
-        console.log("Selected: ", selected);
 
-        this.setState({selected: selected});
+
+        if (selected === this.state.selected) {
+            console.log("UnSelected: ", selected);
+            this.setState({selected: null});
+            this.props.onHandleStatusViewSelected(null);
+        }
+        else {
+            console.log("Selected: ", selected);
+            this.setState({selected: selected});
+            this.props.onHandleStatusViewSelected(selected);
+        }
+
     }
 
     render() {
